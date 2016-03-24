@@ -4,7 +4,8 @@
   "description": "A quick starter for Babel &amp; browser sync based projects.",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+    "watch": "browser-sync start --server app --files app"
   },
   "repository": {
     "type": "git",
