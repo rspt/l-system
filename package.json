@@ -1,7 +1,7 @@
 {
   "name": "babel-browsersync",
   "version": "1.0.0",
-  "description": "A quick starter for Babel &amp; browser sync based projects.",
+  "description": "A quick starter for rspt's projects.",
   "main": "index.js",
   "scripts": {
     "build:js": "babel app/js -d build/js -w",
