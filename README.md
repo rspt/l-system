@@ -1,9 +1,7 @@
 # Vanilla starter
 
-A quick starter using Babel &amp; Browser sync.
+A quick starter using Jade, Sass, Babel & Browser sync.
 
 ## Commands
 
--   `npm run build:js`: build JS using Babel
--   `npm run live`: create a live server. Serve `app` directory
--   `npm run serve`: live server & auto compilation on change
+Simply run npm start. For others commands, please refer to the package.json.
