@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:js": "babel app/js -d build/js -w",
-    "build:jade": "jade app/templates -w -o build",
+    "build:jade": "jade app/templates -wH -o build",
     "build:scss": "node-sass app/scss -o build/css & node-sass -wr app/scss -o build/css",
     "live": "browser-sync start --server build --files build",
     "start": "npm run build:js & npm run build:jade & npm run build:scss & npm run live"
