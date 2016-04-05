@@ -4,20 +4,21 @@
   "description": "A quick starter for rspt's projects.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && babel app/js -d build/js && jade app/templates -H -o build && node-sass app/scss -o build/css && npm run images",
+    "build": "npm run clean && npm run images & npm run build:js & npm run build:jade & npm run build:scss & npm run build:vendors",
     "build:js": "babel app/js -d build/js -w",
     "build:jade": "jade app/templates -wH -o build",
     "build:scss": "node-sass app/scss -o build/css & node-sass -wr app/scss -o build/css",
+    "build:vendors": "mkdir -p build/vendors/ && cp -r app/vendors build/",
     "clean": "rm -rf build",
     "images": "cp -r app/images build/ 2>/dev/null || :",
     "live": "browser-sync start --server build --files build",
-    "start": "npm run clean && npm run images & npm run build:js & npm run build:jade & npm run build:scss & npm run live"
+    "start": "npm run clean && npm run images & npm run build:js & npm run build:jade & npm run build:scss & npm run build:vendors && npm run live"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rspt/babel-browsersync.git"
   },
-  "author": "",
+  "author": "rspt",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rspt/babel-browsersync/issues"
