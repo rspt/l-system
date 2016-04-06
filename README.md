@@ -1,6 +1,6 @@
-# Vanilla starter
+# L-System
 
-A quick starter using Jade, Sass, Babel & Browser sync.
+Computer art piece!
 
 ## Commands
 
